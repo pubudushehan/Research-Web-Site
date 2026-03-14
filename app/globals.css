@@ -1,26 +1,110 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Enable class-based dark mode for next-themes */
+@variant dark (&:where(.dark, .dark *));
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Surface / background colors */
+  --color-surface: var(--c-surface);
+  --color-surface-secondary: var(--c-surface-secondary);
+  --color-surface-card: var(--c-surface-card);
+
+  /* Text colors */
+  --color-foreground: var(--c-foreground);
+  --color-foreground-secondary: var(--c-foreground-secondary);
+  --color-foreground-muted: var(--c-foreground-muted);
+
+  /* Border */
+  --color-border: var(--c-border);
+
+  /* Accents */
+  --color-accent: #2997FF;
+  --color-accent-purple: #BF5AF2;
+
+  /* Glass */
+  --color-glass: var(--c-glass);
+  --color-glass-border: var(--c-glass-border);
+
+  /* Font */
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ───── Light theme (default) ───── */
+:root {
+  --c-surface: #FAFAFA;
+  --c-surface-secondary: #F5F5F7;
+  --c-surface-card: #FFFFFF;
+  --c-foreground: #1D1D1F;
+  --c-foreground-secondary: #424245;
+  --c-foreground-muted: #86868B;
+  --c-border: rgba(0, 0, 0, 0.08);
+  --c-glass: rgba(255, 255, 255, 0.72);
+  --c-glass-border: rgba(255, 255, 255, 0.2);
+}
+
+/* ───── Dark theme ───── */
+.dark {
+  --c-surface: #000000;
+  --c-surface-secondary: #111111;
+  --c-surface-card: #1C1C1E;
+  --c-foreground: #F5F5F7;
+  --c-foreground-secondary: #A1A1A6;
+  --c-foreground-muted: #6E6E73;
+  --c-border: rgba(255, 255, 255, 0.1);
+  --c-glass: rgba(28, 28, 30, 0.8);
+  --c-glass-border: rgba(255, 255, 255, 0.08);
+}
+
+/* ───── Base styles ───── */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--c-surface);
+  color: var(--c-foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background: #2997FF;
+  color: white;
+}
+
+/* ───── Scrollbar ───── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-foreground-muted);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-foreground-secondary);
+}
+
+/* ───── Utility animations ───── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
 }
