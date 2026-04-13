@@ -84,7 +84,7 @@ export function ProblemSection() {
                 <p className="text-sm text-foreground-secondary leading-relaxed mb-4">
                   Sinhala, spoken by approximately 17 million people, remains severely
                   underrepresented in speech synthesis research. Existing Sinhala TTS systems are
-                  mostly concatenative or limited to neutral-prosody deep learning — producing
+                  mostly concatenative or limited to neutral-prosody deep learning, producing
                   speech that sounds flat and emotionally sterile.
                 </p>
               </div>

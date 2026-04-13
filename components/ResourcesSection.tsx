@@ -9,27 +9,29 @@ import {
   Github,
   BookOpen,
   Download,
+  ScrollText,
+  Database,
 } from "lucide-react";
 
 const resources = [
   {
     icon: FileText,
-    title: "Research Proposal",
-    desc: "Full research proposal document with literature review and methodology.",
+    title: "Research Thesis",
+    desc: "Full research thesis document with literature review, methodology, and results.",
     format: "PDF",
     href: "#",
   },
   {
-    icon: FileBarChart,
-    title: "Individual Research Report",
-    desc: "Detailed individual contribution reports and analysis.",
-    format: "PDF",
+    icon: Database,
+    title: "Dataset",
+    desc: "Complete dataset containing emotionally expressive Sinhala audio and text.",
+    format: "ZIP",
     href: "#",
   },
   {
     icon: Presentation,
-    title: "Progress Presentation",
-    desc: "Latest progress presentation slides with results and findings.",
+    title: "Final Presentation",
+    desc: "Final presentation slides with complete results and findings.",
     format: "PPTX",
     href: "#",
   },
@@ -45,6 +47,13 @@ const resources = [
     title: "Documentation & Tables",
     desc: "Summary tables, data documentation, and supplementary materials.",
     format: "XLSX",
+    href: "#",
+  },
+  {
+    icon: ScrollText,
+    title: "Research Paper",
+    desc: "Published academic paper detailing the methodology, experiments, and final results.",
+    format: "PDF",
     href: "#",
   },
 ];

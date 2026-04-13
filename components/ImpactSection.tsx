@@ -15,6 +15,9 @@ import {
   RefreshCw,
   FileText,
   Presentation,
+  Database,
+  Brain,
+  Zap,
 } from "lucide-react";
 
 const significanceItems = [
@@ -45,12 +48,12 @@ const significanceItems = [
 ];
 
 const futureWork = [
-  { icon: FlaskConical, title: "End-to-End Integration", desc: "Complete system integration and deployment." },
-  { icon: BarChart3, title: "Performance Analysis", desc: "Model evaluation with objective metrics." },
-  { icon: UserCheck, title: "MOS Testing", desc: "User studies and Mean Opinion Score evaluation." },
-  { icon: RefreshCw, title: "Model Refinement", desc: "Result analysis and iterative improvements." },
-  { icon: FileText, title: "Research Paper", desc: "Documentation and academic paper writing." },
-  { icon: Presentation, title: "Final Submission", desc: "Final presentation and project delivery." },
+  { icon: Database, title: "Dataset Expansion", desc: "Increase the dataset volume & include other emotions." },
+  { icon: Brain, title: "Enhanced Models", desc: "Enhanced Ontology and ML model." },
+  { icon: RefreshCw, title: "Model Retraining", desc: "Retrain model with different configurations." },
+  { icon: Zap, title: "Pipeline Optimization", desc: "End-to-end pipeline optimization." },
+  { icon: Users, title: "Voice Variance", desc: "Increase the variance of voices (Male, Female, Child)." },
+  { icon: FileText, title: "Research Paper", desc: "Documentation & Research Paper Writing." },
 ];
 
 export function ImpactSection() {

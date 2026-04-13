@@ -15,7 +15,7 @@ const objectives = [
     icon: Search,
     number: "02",
     title: "Semantic-Emotion Analysis",
-    desc: "Develop a Sinhala-specific NLP pipeline that automatically derives emotional context through semantic analysis, sentiment detection, and contextual emotion inference — without manual annotation.",
+    desc: "Develop a Sinhala-specific NLP pipeline that automatically derives emotional context through semantic analysis, sentiment detection, and contextual emotion inference, without manual annotation.",
   },
   {
     icon: Cpu,

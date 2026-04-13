@@ -10,10 +10,7 @@ const taglines = [
 ];
 
 const buttons = [
-  { label: "Try Demo", icon: Play, href: "#", primary: true, disabled: true },
-  { label: "Research Proposal", icon: FileText, href: "#resources", primary: false, disabled: false },
-  { label: "Individual Report", icon: FileText, href: "#resources", primary: false, disabled: false },
-  { label: "Presentation", icon: Download, href: "#resources", primary: false, disabled: false },
+  { label: "Try Demo", icon: Play, href: "#", primary: true, disabled: false },
 ];
 
 export function HeroSection() {

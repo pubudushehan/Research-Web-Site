@@ -20,12 +20,12 @@ const timelineItems: TimelineItem[] = [
   { label: "Sinhala Semantic-Emotion Analysis Framework", status: "completed" },
   { label: "Ontology Designing", status: "completed" },
   { label: "Transformer Fine-Tuning", status: "completed" },
-  { label: "Fine-Tuning Style-BERT-VITS2", status: "current" },
-  { label: "End-to-End System Integration", status: "upcoming" },
-  { label: "Model Evaluation & Performance Analysis", status: "upcoming" },
-  { label: "User Studies & MOS Testing", status: "upcoming" },
-  { label: "Result Analysis & Model Refinement", status: "upcoming" },
-  { label: "Documentation & Final Submission", status: "upcoming" },
+  { label: "Fine-Tuning Style-BERT-VITS2", status: "completed" },
+  { label: "End-to-End System Integration", status: "completed" },
+  { label: "Model Evaluation & Performance Analysis", status: "completed" },
+  { label: "User Studies & MOS Testing", status: "completed" },
+  { label: "Result Analysis & Model Refinement", status: "completed" },
+  { label: "Documentation & Final Submission", status: "completed" },
 ];
 
 function StatusIcon({ status }: { status: Status }) {
